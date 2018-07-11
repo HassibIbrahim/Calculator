@@ -1,6 +1,6 @@
 
 
-var add= function(number1,number2){return number1 + number2;};
+var add= function(number1,number2){return number1 + number2};
 
 var subtract= function(number1,number2){return number1 - number2;};
 
@@ -14,18 +14,19 @@ var divide= function(number1,number2){return number1 / number2;};
 $(document).ready(function(){
 $("form").submit(function(event) {
   var why =$("#calculations").val()
-  var number1 = $("#number1").val()
-  alert(number1)
-  var number2 = $("#number2").val()
-  alert(number2)
+  var number1 = parseInt($("#number1").val())
+
+  var number2 = parseInt($("#number2").val())
+
   if (why === "Add") {
-    alert("Add")
+    return add(number1,number2);
+
   }else if (why === "Subtract") {
-    alert("Subtract")
+    return subtract(number1,number2);
   }else if (why === "Multiply") {
-    alert("Multiply")
+    return multiply(number1,number2);
   }else if (why === "Divide") {
-  alert("Divide")
+  return divide(number1,number2);
   }
   event.preventDefault;
 
