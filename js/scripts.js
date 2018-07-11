@@ -19,14 +19,14 @@ $("form").submit(function(event) {
   var number2 = parseInt($("#number2").val())
 
   if (why === "Add") {
-    return add(number1,number2);
+    alert(add(number1,number2));
 
   }else if (why === "Subtract") {
-    return subtract(number1,number2);
+    alert(subtract(number1,number2));
   }else if (why === "Multiply") {
-    return multiply(number1,number2);
+    alert(multiply(number1,number2));
   }else if (why === "Divide") {
-  return divide(number1,number2);
+  alert(divide(number1,number2));
   }
   event.preventDefault;
 
