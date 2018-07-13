@@ -19,12 +19,14 @@ $("form").submit(function(event) {
   var number2 = parseInt($("#number2").val())
 
   if (why === "Add") {
-    alert(add(number1,number2));
-
+  // alert(add(number1,number2));
+$("p#matokeo").append(add(number1,number2));
   }else if (why === "Subtract") {
-    alert(subtract(number1,number2));
+    // alert(subtract(number1,number2));
+    $("p#matokeo").append(subtract(number1,number2));
   }else if (why === "Multiply") {
-    alert(multiply(number1,number2));
+    // alert(multiply(number1,number2));
+    $("p#matokeo").append(multiply(number1,number2));
   }else if (why === "Divide") {
   // alert(divide(number1,number2));
   $("p#matokeo").append(divide(number1,number2));
