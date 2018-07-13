@@ -26,9 +26,11 @@ $("form").submit(function(event) {
   }else if (why === "Multiply") {
     alert(multiply(number1,number2));
   }else if (why === "Divide") {
-  alert(divide(number1,number2));
+  // alert(divide(number1,number2));
+  $("p#matokeo").append(divide(number1,number2));
   }
-  event.preventDefault;
+
+  event.preventDefault();
 
 })
 });
