@@ -31,7 +31,8 @@ $("p#matokeo").append(add(number1,number2));
   // alert(divide(number1,number2));
   $("p#matokeo").append(divide(number1,number2));
   }
-  event.preventDefault;
+
+  event.preventDefault();
 
 })
 });
