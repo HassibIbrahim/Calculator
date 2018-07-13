@@ -20,13 +20,13 @@ $("form").submit(function(event) {
 
   if (why === "Add") {
   // alert(add(number1,number2));
-$("p#matokeo").append(add(number1,number2));
+  $("p#matokeo").append(add(number1,number2));
   }else if (why === "Subtract") {
     // alert(subtract(number1,number2));
-    $("p#matokeo").append(subtract(number1,number2));
+  $("p#matokeo").append(subtract(number1,number2));
   }else if (why === "Multiply") {
     // alert(multiply(number1,number2));
-    $("p#matokeo").append(multiply(number1,number2));
+  $("p#matokeo").append(multiply(number1,number2));
   }else if (why === "Divide") {
   // alert(divide(number1,number2));
   $("p#matokeo").append(divide(number1,number2));
